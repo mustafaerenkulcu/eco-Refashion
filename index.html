@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="tr" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoRefashion - Sustainable Fashion Revolution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .eco-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .eco-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .leaf-icon {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body class="h-full bg-gray-50 font-sans">
+    <header class="gradient-bg text-white">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div class="leaf-icon">🌿</div>
+                    <h1 class="text-2xl font-bold">EcoRefashion</h1>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="hover:text-green-200 transition-colors">Home</a>
+                    <a href="#about" class="hover:text-green-200 transition-colors">About</a>
+                    <a href="#services" class="hover:text-green-200 transition-colors">Services</a>
+                    <a href="#tips" class="hover:text-green-200 transition-colors">Tips</a>
+                    <a href="#stats" class="hover:text-green-200 transition-colors">Impact</a>
+                </div>
+                <button class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="gradient-bg text-white py-20">
+            <div class="container mx-auto px-6 text-center">
+                <div class="fade-in">
+                    <h2 class="text-5xl font-bold mb-6">Ecodiscover Fashion</h2>
+                    <p class="text-xl mb-8 max-w-2xl mx-auto">Eco Refashion is a sustainable fashion concept that turns old clothes into new and eco-friendly designs through upcycling and creativity</p>
+                    <p class ="text-xl mb8 max-w-2xl mx-auto"><h2></h2>Student Project</p>
+                    <div class="space-x-4">
+                        <button onclick="scrollToSection('services')" class="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full font-semibold transition-colors">
+                            Explore Our Services
+                        </button>
+                        <button onclick="scrollToSection('tips')" class="border-2 border-white text-white hover:bg-white hover:text-purple-600 px-8 py-3 rounded-full font-semibold transition-colors">
+                           Tips For Eco-Fashion
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <center>
+                 <img src="logo.jpeg" width="150px"  alt=""> </center>
+                 <img src="ecoref.jpeg" width="150px"alt="">
+                  <img src="seres.jpeg" width="350px" alt="">   
+                  <h3 class="text-4xl font-bold text-gray-800 mb-4">Why Choose EcoRefashion?</h3>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">EcoRefashion is dedicated to redefining fashion through sustainability and innovation.
+We focus on transforming existing materials into high-quality, eco-friendly designs that minimize environmental impact.
+By choosing EcoRefashion, you support responsible production, ethical values, and a vision for a cleaner and more conscious fashion industry.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="eco-card bg-green-50 p-8 rounded-lg text-center">
+                        <div class="text-4xl mb-4">♻️</div>
+                        <h4 class="text-xl font-semibold mb-3 text-gray-800">Recycling</h4>
+                        <p class="text-gray-600">We transform pre-used and discarded materials into sustainable fashion, minimizing environmental impact and promoting responsible style.</p>
+                    </div>
+                    
+                    <div class="eco-card bg-blue-50 p-8 rounded-lg text-center">
+                        <div class="text-4xl mb-4">🌍</div>
+                        <h4 class="text-xl font-semibold mb-3 text-gray-800">Eco-Friendly</h4>
+                        <p class="text-gray-600">Reduce your carbon footprint and promote sustainable living by choosing products made with eco-conscious materials and practices.</p>
+                    </div>
+                    
+                    <div class="eco-card bg-purple-50 p-8 rounded-lg text-center">
+                        <div class="text-4xl mb-4">✨</div>
+                        <h4 class="text-xl font-semibold mb-3 text-gray-800">Unique Style</h4>
+                        <p class="text-gray-600">Custom-designed clothes that are one-of-a-kind, made with sustainable materials.</p>
+                    </div>
+          
+                    <div class="eco-card bg-red-50 p-8 rounded-lg text-center">
+                        <div class="text-4xl mb-4">📼</div>
+                        <h4 class="text-xl font-semibold mb-3 text-gray-800">Our Videos</h4>
+                        <p class="text-gray-600"><a href="https://www.youtube.com/watch?v=FBE24IpXKps"
+                            target="_blank"
+                            title="Go The Video"
+                            ><u><h4></h4>Watch The Interview</u></a></p>
+                        <a href="https://www.youtube.com/watch?v=vLEurzPDXfE"
+                        target="_blank"
+                        title="Watch The Video"
+                        ><u>Goes for an interview with the public</u></a></p>
+                    </div>
+
+                    <div class="eco-card bg-blue-50 p-8 rounded-lg text-center">
+                        <div class="text-4xl mb-4">🎮</div>
+                        <h4 class="text-xl font-semibold mb-3 text-gray-800">Refacion Games</h4>
+                        <p class="text-gray-600"><a href="https://view.genially.com/68f7dde791b8431d8fa40798/interactive-content-eco-refashion-quiz"
+                            target="_blank"
+                            title="Click And Play"
+                            ><u><h4></h4>Eco-Refacion Quiz</u></a></p>
+                        <a href="https://mustafaerenkulcu-code.github.io/oyun/"
+                        target="_blank"
+                        title="Eco-Refacion Game"
+                        ><u>Eco Refacion Game</u></a></p>
+                    </div>
+
+                    <div class="eco-card bg-blue-50 p-8 rounded-lg text-center">
+                        <div class="text-4xl mb-4">📚</div>
+                        <h4 class="text-xl font-semibold mb-3 text-gray-800">Presentations</h4>
+                        <p class="text-gray-600"><a href="https://www.canva.com/design/DAG2coYFhbo/LhWE1kezAT4X2QDSnC8HAQ/edit?utm_content=DAG2coYFhbo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                            target="_blank"
+                            title="Carbon Footprint Comparison"
+                            ><u><h4></h4>Presentations of Carbon Footprint</u></a></p>
+                        <a href="https://www.canva.com/design/DAG2QHsbXls/umcmFDIL-1lBcaef_p4VAw/edit?utm_content=DAG2QHsbXls&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                        target="_blank"
+                        title="T-shirt Making Stages"
+                        ><u>T-Shirt presentations</u></a></p>
+                        <a href="https://www.canva.com/design/DAG2LB1Xigw/hWaW1MjhC64-tkmyWIIoaQ/edit?utm_content=DAG2LB1Xigw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                        target="_blank"
+                        title="Water Footprint"
+                        ><u>Water Footprint presentations</u></a></p>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-4xl font-bold text-gray-800 mb-4">Our Services</h3>
+                    <p class="text-lg text-gray-600">Different ways to give your clothes new life</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="eco-card bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-3xl mb-4">👗</div>
+                        <h4 class="text-lg font-semibold mb-2">Clothing Refashion</h4>
+                        <p class="text-gray-600 text-sm">Refresh your old clothes with modern designs</p>
+                    </div>
+                    
+                    <div class="eco-card bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-3xl mb-4">✂️</div>
+                        <h4 class="text-lg font-semibold mb-2">Custom Design</h4>
+                        <p class="text-gray-600 text-sm">Design unique pieces tailored just for you</p>
+                    </div>
+                    
+                    <div class="eco-card bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-3xl mb-4">🎨</div>
+                        <h4 class="text-lg font-semibold mb-2">Color Change</h4>
+                        <p class="text-gray-600 text-sm">Re-color your clothes with natural dyes</p>
+                    </div>
+                    
+                    <div class="eco-card bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-3xl mb-4">🧵</div>
+                        <h4 class="text-lg font-semibold mb-2">Repair Service</h4>
+                        <p class="text-gray-600 text-sm">Fix torn and worn-out clothes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips Section -->
+        <section id="tips" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-4xl font-bold text-gray-800 mb-4">Sustainable Fashion Tips</h3>
+                    <p class="text-lg text-gray-600">Simple methods you can apply at home</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-green-100 p-2 rounded-full">
+                                <span class="text-green-600 font-bold">1</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-2">Choose Quality Pieces</h4>
+                                <p class="text-gray-600">Prefer clothes made from quality fabrics that will last a long time.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-green-100 p-2 rounded-full">
+                                <span class="text-green-600 font-bold">2</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-2">Proper Care</h4>
+                                <p class="text-gray-600">Make your clothes long-lasting with proper washing and storage methods.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-green-100 p-2 rounded-full">
+                                <span class="text-green-600 font-bold">3</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-2">Creative Combinations</h4>
+                                <p class="text-gray-600">Create new looks by combining your existing pieces in different ways.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-blue-100 p-2 rounded-full">
+                                <span class="text-blue-600 font-bold">4</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-2">Swap and Share</h4>
+                                <p class="text-gray-600">Exchange clothes with friends or prefer second-hand stores.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-blue-100 p-2 rounded-full">
+                                <span class="text-blue-600 font-bold">5</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-2">DIY Projects</h4>
+                                <p class="text-gray-600">Refresh your clothes yourself with simple sewing techniques.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-blue-100 p-2 rounded-full">
+                                <span class="text-blue-600 font-bold">6</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-2">Conscious Shopping</h4>
+                                <p class="text-gray-600">Buy only the pieces you really need and avoid impulse shopping.</p>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                            <div class="bg-blue-100 p-2 rounded-full">
+                                <span class="text-red-600 font-bold">7</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-2">Mindful Washing</h4>
+                                <p class="text-gray-600">Wash your clothes less frequently and with cold water, avoid over-drying in the machine. This saves water and energy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Statistics Section -->
+        <section id="stats" class="py-16 gradient-bg text-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-4xl font-bold mb-4">Our Environmental Impact</h3>
+                    <p class="text-lg">Making a difference through sustainable fashion practices</p>
+                </div>
+                
+                <!-- Statistics Cards -->
+                <div class="grid md:grid-cols-4 gap-6 mb-12">
+                    <div class="bg-white bg-opacity-10 p-6 rounded-lg text-center">
+                        <div class="text-3xl font-bold mb-2">2,500+</div>
+                        <p class="text-sm">Clothes Refashioned</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 p-6 rounded-lg text-center">
+                        <div class="text-3xl font-bold mb-2">15 Tons</div>
+                        <p class="text-sm">CO₂ Saved</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 p-6 rounded-lg text-center">
+                        <div class="text-3xl font-bold mb-2">50,000L</div>
+                        <p class="text-sm">Water Conserved</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 p-6 rounded-lg text-center">
+                        <div class="text-3xl font-bold mb-2">98%</div>
+                        <p class="text-sm">Customer Satisfaction</p>
+                    </div>
+                </div>
+
+                <!-- Impact Charts -->
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <!-- Line Chart -->
+                    <div class="bg-white bg-opacity-10 p-8 rounded-lg">
+                        <h4 class="text-xl font-bold mb-6 text-center">Monthly Refashion Progress</h4>
+                        <div class="relative">
+                            <svg viewBox="0 0 400 250" class="w-full h-48">
+                                <!-- Grid lines -->
+                                <defs>
+                                    <pattern id="grid" width="40" height="25" patternUnits="userSpaceOnUse">
+                                        <path d="M 40 0 L 0 0 0 25" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                                    </pattern>
+                                    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#34D399;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="250" fill="url(#grid)" />
+                                
+                                <!-- Y-axis labels -->
+                                <text x="20" y="30" fill="white" text-anchor="middle" font-size="10">400</text>
+                                <text x="20" y="80" fill="white" text-anchor="middle" font-size="10">300</text>
+                                <text x="20" y="130" fill="white" text-anchor="middle" font-size="10">200</text>
+                                <text x="20" y="180" fill="white" text-anchor="middle" font-size="10">100</text>
+                                <text x="20" y="230" fill="white" text-anchor="middle" font-size="10">0</text>
+                                
+                                <!-- Chart line with gradient -->
+                                <polyline points="50,200 90,170 130,140 170,110 210,80 250,70 290,60 330,50 370,40" 
+                                         fill="none" stroke="url(#lineGradient)" stroke-width="3"/>
+                                
+                                <!-- Data points with animation -->
+                                <circle cx="50" cy="200" r="3" fill="#10B981">
+                                    <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="90" cy="170" r="3" fill="#10B981">
+                                    <animate attributeName="r" values="3;5;3" dur="2s" begin="0.2s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="130" cy="140" r="3" fill="#10B981">
+                                    <animate attributeName="r" values="3;5;3" dur="2s" begin="0.4s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="170" cy="110" r="3" fill="#10B981">
+                                    <animate attributeName="r" values="3;5;3" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="210" cy="80" r="3" fill="#10B981">
+                                    <animate attributeName="r" values="3;5;3" dur="2s" begin="0.8s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="250" cy="70" r="3" fill="#10B981">
+                                    <animate attributeName="r" values="3;5;3" dur="2s" begin="1s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="290" cy="60" r="3" fill="#10B981">
+                                    <animate attributeName="r" values="3;5;3" dur="2s" begin="1.2s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="330" cy="50" r="3" fill="#10B981">
+                                    <animate attributeName="r" values="3;5;3" dur="2s" begin="1.4s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="370" cy="40" r="3" fill="#10B981">
+                                    <animate attributeName="r" values="3;5;3" dur="2s" begin="1.6s" repeatCount="indefinite"/>
+                                </circle>
+                                
+                                <!-- X-axis labels -->
+                                <text x="50" y="245" fill="white" text-anchor="middle" font-size="9">Jan</text>
+                                <text x="90" y="245" fill="white" text-anchor="middle" font-size="9">Feb</text>
+                                <text x="130" y="245" fill="white" text-anchor="middle" font-size="9">Mar</text>
+                                <text x="170" y="245" fill="white" text-anchor="middle" font-size="9">Apr</text>
+                                <text x="210" y="245" fill="white" text-anchor="middle" font-size="9">May</text>
+                                <text x="250" y="245" fill="white" text-anchor="middle" font-size="9">Jun</text>
+                                <text x="290" y="245" fill="white" text-anchor="middle" font-size="9">Jul</text>
+                                <text x="330" y="245" fill="white" text-anchor="middle" font-size="9">Aug</text>
+                                <text x="370" y="245" fill="white" text-anchor="middle" font-size="9">Sep</text>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Pie Chart -->
+                    <div class="bg-white bg-opacity-10 p-8 rounded-lg">
+                        <h4 class="text-xl font-bold mb-6 text-center">Service Distribution</h4>
+                        <div class="flex justify-center">
+                            <svg viewBox="0 0 200 200" class="w-48 h-48">
+                                <defs>
+                                    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+                                        <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.3)"/>
+                                    </filter>
+                                </defs>
+                                
+                                <!-- Refashion 40% -->
+                                <path d="M 100 100 L 100 20 A 80 80 0 0 1 156.56 43.44 Z" fill="#10B981" filter="url(#shadow)">
+                                    <animateTransform attributeName="transform" type="rotate" values="0 100 100;5 100 100;0 100 100" dur="3s" repeatCount="indefinite"/>
+                                </path>
+                                
+                                <!-- Custom Design 30% -->
+                                <path d="M 100 100 L 156.56 43.44 A 80 80 0 0 1 156.56 156.56 Z" fill="#3B82F6" filter="url(#shadow)">
+                                    <animateTransform attributeName="transform" type="rotate" values="0 100 100;-3 100 100;0 100 100" dur="4s" repeatCount="indefinite"/>
+                                </path>
+                                
+                                <!-- Color Change 20% -->
+                                <path d="M 100 100 L 156.56 156.56 A 80 80 0 0 1 43.44 156.56 Z" fill="#8B5CF6" filter="url(#shadow)">
+                                    <animateTransform attributeName="transform" type="rotate" values="0 100 100;3 100 100;0 100 100" dur="5s" repeatCount="indefinite"/>
+                                </path>
+                                
+                                <!-- Repair 10% -->
+                                <path d="M 100 100 L 43.44 156.56 A 80 80 0 0 1 100 20 Z" fill="#F59E0B" filter="url(#shadow)">
+                                    <animateTransform attributeName="transform" type="rotate" values="0 100 100;-2 100 100;0 100 100" dur="6s" repeatCount="indefinite"/>
+                                </path>
+                                
+                                <!-- Center circle -->
+                                <circle cx="100" cy="100" r="25" fill="rgba(255,255,255,0.9)"/>
+                                <text x="100" y="105" text-anchor="middle" fill="#374151" font-size="12" font-weight="bold">2024</text>
+                            </svg>
+                        </div>
+                        <div class="mt-4 space-y-2 text-sm">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-3 h-3 bg-green-500 rounded"></div>
+                                    <span>Refashion</span>
+                                </div>
+                                <span>40%</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-3 h-3 bg-blue-500 rounded"></div>
+                                    <span>Custom Design</span>
+                                </div>
+                                <span>30%</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-3 h-3 bg-purple-500 rounded"></div>
+                                    <span>Color Change</span>
+                                </div>
+                                <span>20%</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-3 h-3 bg-yellow-500 rounded"></div>
+                                    <span>Repair</span>
+                                </div>
+                                <span>10%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bar Chart -->
+                <div class="bg-white bg-opacity-10 p-8 rounded-lg mb-8">
+                    <h4 class="text-2xl font-bold mb-6 text-center">CO₂ Savings by Month (Tons)</h4>
+                    <div class="flex items-end justify-center space-x-4 h-48">
+                        <div class="flex flex-col items-center">
+                            <div class="bg-green-400 w-8 rounded-t" style="height: 60px;">
+                                <div class="w-full h-full bg-gradient-to-t from-green-600 to-green-400 rounded-t animate-pulse"></div>
+                            </div>
+                            <span class="text-xs mt-2">Jan</span>
+                            <span class="text-xs font-bold">1.2</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="bg-green-400 w-8 rounded-t" style="height: 80px;">
+                                <div class="w-full h-full bg-gradient-to-t from-green-600 to-green-400 rounded-t animate-pulse"></div>
+                            </div>
+                            <span class="text-xs mt-2">Feb</span>
+                            <span class="text-xs font-bold">1.6</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="bg-green-400 w-8 rounded-t" style="height: 100px;">
+                                <div class="w-full h-full bg-gradient-to-t from-green-600 to-green-400 rounded-t animate-pulse"></div>
+                            </div>
+                            <span class="text-xs mt-2">Mar</span>
+                            <span class="text-xs font-bold">2.0</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="bg-green-400 w-8 rounded-t" style="height: 120px;">
+                                <div class="w-full h-full bg-gradient-to-t from-green-600 to-green-400 rounded-t animate-pulse"></div>
+                            </div>
+                            <span class="text-xs mt-2">Apr</span>
+                            <span class="text-xs font-bold">2.4</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="bg-green-400 w-8 rounded-t" style="height: 140px;">
+                                <div class="w-full h-full bg-gradient-to-t from-green-600 to-green-400 rounded-t animate-pulse"></div>
+                            </div>
+                            <span class="text-xs mt-2">May</span>
+                            <span class="text-xs font-bold">2.8</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="bg-green-400 w-8 rounded-t" style="height: 150px;">
+                                <div class="w-full h-full bg-gradient-to-t from-green-600 to-green-400 rounded-t animate-pulse"></div>
+                            </div>
+                            <span class="text-xs mt-2">Jun</span>
+                            <span class="text-xs font-bold">3.0</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="bg-green-400 w-8 rounded-t" style="height: 160px;">
+                                <div class="w-full h-full bg-gradient-to-t from-green-600 to-green-400 rounded-t animate-pulse"></div>
+                            </div>
+                            <span class="text-xs mt-2">Jul</span>
+                            <span class="text-xs font-bold">3.2</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="bg-green-400 w-8 rounded-t" style="height: 170px;">
+                                <div class="w-full h-full bg-gradient-to-t from-green-600 to-green-400 rounded-t animate-pulse"></div>
+                            </div>
+                            <span class="text-xs mt-2">Aug</span>
+                            <span class="text-xs font-bold">3.4</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="bg-green-400 w-8 rounded-t" style="height: 180px;">
+                                <div class="w-full h-full bg-gradient-to-t from-green-600 to-green-400 rounded-t animate-pulse"></div>
+                            </div>
+                            <span class="text-xs mt-2">Sep</span>
+                            <span class="text-xs font-bold">3.6</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Impact Table -->
+                <div class="mt-12 bg-white bg-opacity-10 rounded-lg overflow-hidden">
+                    <h4 class="text-2xl font-bold p-6 text-center">Environmental Benefits Comparison</h4>
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead class="bg-white bg-opacity-20">
+                                <tr>
+                                    <th class="px-6 py-3 text-left font-semibold">Process</th>
+                                    <th class="px-6 py-3 text-center font-semibold">New Clothing</th>
+                                    <th class="px-6 py-3 text-center font-semibold">Refashioned</th>
+                                    <th class="px-6 py-3 text-center font-semibold">Savings</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-white divide-opacity-20">
+                                <tr>
+                                    <td class="px-6 py-4">Water Usage (Liters)</td>
+                                    <td class="px-6 py-4 text-center">2,700</td>
+                                    <td class="px-6 py-4 text-center">50</td>
+                                    <td class="px-6 py-4 text-center text-green-300 font-bold">98% ↓</td>
+                                </tr>
+                                <tr class="bg-white bg-opacity-5">
+                                    <td class="px-6 py-4">CO₂ Emissions (kg)</td>
+                                    <td class="px-6 py-4 text-center">33.4</td>
+                                    <td class="px-6 py-4 text-center">2.1</td>
+                                    <td class="px-6 py-4 text-center text-green-300 font-bold">94% ↓</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4">Energy (kWh)</td>
+                                    <td class="px-6 py-4 text-center">60</td>
+                                    <td class="px-6 py-4 text-center">5</td>
+                                    <td class="px-6 py-4 text-center text-green-300 font-bold">92% ↓</td>
+                                </tr>
+                                <tr class="bg-white bg-opacity-5">
+                                    <td class="px-6 py-4">Chemical Usage (g)</td>
+                                    <td class="px-6 py-4 text-center">150</td>
+                                    <td class="px-6 py-4 text-center">10</td>
+                                    <td class="px-6 py-4 text-center text-green-300 font-bold">93% ↓</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4">Waste Generated (g)</td>
+                                    <td class="px-6 py-4 text-center">400</td>
+                                    <td class="px-6 py-4 text-center">25</td>
+                                    <td class="px-6 py-4 text-center text-green-300 font-bold">94% ↓</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex items-center justify-center space-x-2 mb-4">
+                <div class="leaf-icon">🌿</div>
+                <span class="text-xl font-bold">EcoRefashion</span>
+            </div>
+            <p class="text-gray-400">© 2025 This Websites Updated By Mustafa Eren And Omer Egemen.</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Add scroll effect to cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.eco-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9911644ae4299862',t:'MTc2MDg4ODYxMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
